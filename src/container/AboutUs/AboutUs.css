@@ -1,0 +1,85 @@
+.app__aboutUs {
+  background: #0C0C0C;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.app__aboutUs__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.app__aboutUs_G {
+  position: absolute;
+}
+
+.app__aboutUs_G img {
+  height: 415px;
+  width: 391px;
+  z-index: 0;
+}
+
+.app__aboutUs_knifeImage img {
+  height: 910px;
+  z-index: 9999;
+}
+
+.app__aboutUs__content_About {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  gap: 8px;
+  color: #DCCA87;
+  margin: 3rem;
+}
+
+.app__aboutUs__content_History {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 8px;
+  color: #DCCA87;
+  margin: 3rem;
+}
+
+.app__aboutUs__content p {
+  margin: 2rem 0;
+}
+
+.app__aboutUs__content h1 {
+  font-family: 'Cormorant Upright';
+}
+
+@media screen and (max-width:600px) {
+  .app__aboutUs__content {
+    flex-direction: column;
+  }
+
+  .app__aboutUs__content_About, .app__aboutUs__content_History {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .app__aboutUs_G img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .app__aboutUs_knifeImage img{
+    height: 500px;
+  }
+}
